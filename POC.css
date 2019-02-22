@@ -47,7 +47,7 @@ header{
   cursor: pointer;
 }
 .photoButton::before{
-  content: url('../Union.svg');
+  content: url('../Union.png');
   width: 40px;
   height: 40px;
   padding: 10px;
