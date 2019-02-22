@@ -1,0 +1,319 @@
+*{
+  box-sizing: border-box;
+}
+html{
+  width: 100vw;
+}
+body{
+  margin: 0 auto;
+  width:1366px;
+  height: 750px;
+  background-image: url('bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'Mont';
+}
+header{
+  text-align: center;
+}
+
+.navigation__price p{
+  font-weight: 600;
+  font-style: normal;
+}
+
+.imports{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  margin-bottom: 3px;
+  margin-top: 5px;
+  position: relative;
+}
+.takePhoto{
+  position: absolute;
+  top : 0;
+  right : 55px;
+  width: 415px;
+  height: 85px;
+}
+.photoButton{
+  margin-top: 22.5px;
+  font-size: 18px;
+  text-align: center;
+}
+.photoButton:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+.photoButton::before{
+  content: url('../Union.svg');
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+}
+input{
+  display: none;
+}
+.vetement{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  margin: 0 20px 5px 20px;
+  position: relative;
+}
+.vetement p{
+  margin-bottom: 2px;
+}
+.vetement1__img, .vetement2__img, .vetement3__img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  padding: 8px;
+}
+.textile{
+  border: 1px solid #000;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: margin-bottom .3s, border .1s; 
+  
+}
+.cross1, .cross2, .cross3{
+  cursor: pointer;
+  display: none;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  right: 15px;
+  justify-content: center;
+  align-items:center;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+.close{
+  fill: grey;
+  margin-top: 2px;
+  width: 14px;
+  height: 14px;
+}
+.textile:hover{
+  border: 1.25px solid #000;
+  margin-bottom:8px;
+}
+.shoe{
+  position: relative;
+  height: 420px;
+  width: 1260px;
+  margin: 0 auto;
+  background-image: url('CUSTOM.png');
+  background-repeat: no-repeat;
+  background-position: center 15%;
+  text-align: center;
+}
+.shoe img{
+  margin-top: 40px;
+}
+
+.texture, .mask{
+  position: absolute;
+  top:0;
+  height: 100%;
+  width: 100%;
+}
+
+.mask{
+  cursor: pointer;
+  z-index: 2;
+  opacity: .7;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
+.mask2:hover,.mask3:hover,.mask5:hover{
+  background-color: rgba(0,0,0,0.3) !important;
+}
+
+.hovered{
+  background: rgba(0,0,0,0.3) !important;
+}
+.mask1{
+  clip-path: polygon(855px 166px, 838px 173px, 825px 176px, 802px 177px, 776px 169px, 747px 154px, 727px 137px, 712px 121px, 700px 124px, 686px 133px, 667px 150px, 679px 172px, 693px 190px, 704px 200px, 716px 211px, 791px 195px, 823px 187px, 867px 173px);
+}
+.mask1bis{
+  clip-path: polygon(907px 194px, 916px 210px, 919px 246px, 916px 245px, 903px 254px, 889px 263px, 877px 266px, 862px 270px, 835px 271px, 806px 268px, 779px 260px, 767px 252px, 748px 246px, 741px 236px, 780px 229px, 813px 218px, 856px 201px, 899px 184px);
+}
+.mask1ter{
+  clip-path: polygon(552px 212px, 541px 216px, 40.06% 53.47%, 40.27% 56.24%, 40.2% 59.03%, 40.12% 60.24%, 39.64% 61.27%, 39.16% 61.77%, 38.14% 62.2%, 36.26% 62.7%, 34.07% 62.96%, 31.45% 62.83%, 368px 261px, 343px 257px, 335px 255px, 335px 252px, 328px 256px, 320px 264px, 315px 273px, 25.54% 65.84%, 27.21% 67.19%, 28.33% 68.06%, 29.75% 69.1%, 33.5% 71.07%, 35.78% 71.67%, 37.69% 71.73%, 39.57% 71.55%, 525px 299px, 557px 296px, 45.43% 69.41%, 587px 288px, 609px 277px, 600px 264px, 590px 253px, 572px 241px, 560px 229px, 555px 220px);
+}
+
+.mask2{
+  clip-path: polygon(907px 192px, 919px 211px, 916px 184px, 911px 156px, 910px 145px, 907px 130px, 901px 118px, 896px 113px, 891px 118px, 875px 147px, 869px 153px, 854px 165px, 857px 168px, 864px 172px, 876px 175px, 892px 179px, 899px 183px);
+
+}
+
+.mask3{
+  clip-path: polygon(893px 179px, 868px 174px, 65.18% 44.47%, 61.98% 47%, 58.11% 49.31%, 55.33% 50.29%, 54.06% 50.6%, 53.11% 50.4%, 52.24% 49.17%, 51.71% 47.3%, 51.74% 44%, 52.05% 40.32%, 640px 177px, 624px 187px, 611px 198px, 604px 209px, 601px 222px, 603px 234px, 613px 245px, 624px 250px, 640px 252px, 672px 252px, 709px 245px, 741px 238px, 780px 229px, 813px 218px, 856px 201px, 899px 184px);
+}
+
+.mask4{
+  clip-path: polygon(469px 242px, 483px 237px, 40.14% 53.94%, 40.27% 56.24%, 40.2% 59.03%, 40.12% 60.24%, 39.64% 61.27%, 39.16% 61.77%, 38.14% 62.2%, 36.26% 62.7%, 34.07% 62.96%, 31.45% 62.83%, 368px 261px, 343px 257px, 335px 255px, 336px 253px, 345px 252px, 356px 250px, 376px 248px, 401px 245px, 429px 244px, 442px 243px, 455px 235px, 457px 238px, 461px 241px);
+}
+.mask4bis{
+  clip-path: polygon(674px 163px, 681px 173px, 54.56% 43.76%, 55.24% 46.05%, 56.68% 49.78%, 55.33% 50.29%, 54.06% 50.6%, 53.11% 50.4%, 52.24% 49.17%, 51.71% 47.3%, 51.74% 44%, 52.05% 41.27%, 658px 170px, 50.06% 43.18%, 48.74% 46.06%, 48.11% 48.2%, 47.83% 50.31%, 47.66% 52.93%, 47.66% 55.04%, 48.22% 57%, 49.05% 59.1%, 50.53% 59.83%, 52.29% 59.96%, 54.71% 59.01%, 56.4% 58.1%, 57.53% 57.2%, 58.71% 56.24%, 59.28% 58.25%, 56.9% 58.07%, 55.7% 59.13%, 54.32% 61.67%, 53.13% 62.8%, 51.69% 62.72%, 49.95% 63.26%, 48.62% 65.1%, 48.25% 65.52%, 47.35% 61.95%, 46.45% 59.33%, 574px 243px, 560px 229px, 556px 222px, 551px 213px, 559px 210px, 568px 204px, 581px 195px, 591px 191px, 599px 189px, 611px 184px, 623px 176px, 639px 164px, 651px 159px, 669px 148px, 670px 154px);
+}
+
+.mask5{
+  clip-path: polygon(575px 326px, 582px 316px, 46.4% 74.8%, 49.3% 73.54%, 52.09% 72.76%, 54.78% 72.09%, 57.78% 71.93%, 62.78% 72.44%, 66.58% 72.16%, 69.62% 71.23%, 71.39% 70.54%, 72.34% 69.7%, 924px 290px, 73.27% 67.59%, 72.99% 65.96%, 73.07% 63.84%, 73.18% 60.5%, 73.17% 58.85%, 72.67% 58.3%, 72.38% 58.36%, 70.8% 61.51%, 69.73% 62.65%, 68.04% 64.1%, 66.75% 64.08%, 65.84% 63.98%, 64.54% 63.75%, 62.34% 62.13%, 61.25% 60.75%, 60.53% 59.32%, 59.28% 58.25%, 57.14% 57.83%, 55.78% 59.13%, 54.32% 61.67%, 53.13% 62.8%, 51.69% 62.72%, 49.95% 63.26%, 48.62% 65.1%, 48.01% 65.99%, 47.32% 66.91%, 586px 288px, 571px 293px, 44.34% 70%, 42.64% 70.49%, 40.59% 71.18%, 38.34% 71.64%, 36.13% 71.65%, 33.9% 71.13%, 31.89% 70.09%, 29.29% 68.74%, 27.61% 67.43%, 26.2% 66.26%, 25.48% 65.64%, 24.94% 64.12%, 24.65% 64.91%, 24.71% 66.29%, 24.94% 67.93%, 25.82% 69.45%, 26.67% 70.52%, 27.11% 71.73%, 27.61% 73.27%, 28.12% 73.91%, 28.61% 73.96%, 28.94% 72.68%, 29.09% 72.47%, 390px 313px, 428px 321px, 430px 322px, 440px 330px, 445px 331px, 454px 331px, 464px 323px, 470px 322px, 516px 319px, 552px 318px, 561px 328px, 568px 329px)
+}
+.restart{
+  fill: #cacaca;
+  width:40px;
+  height: 40px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  cursor: pointer;
+}
+.colors{
+  height: 85px;
+  width: 1260px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; 
+}
+.colors img{
+  height: 45px;
+  width: 45px;
+  margin: 20px;
+}
+.colors__palette--1, .colors__palette--2, .colors__palette--3{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 85px;
+}
+.colors__palette--1, .colors__palette--3{
+  width: 329px;
+}
+.colors__palette--2{
+  width: 425px;
+}
+
+.color{
+  border: 1px solid #E3E3E3;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  margin: 0 15px;
+  cursor: pointer;
+  transition: box-shadow .3s;
+}
+
+.color:hover {
+  box-shadow: 0 3.5px 7px rgba(0,0,0,0.25), 0 2.5px 2.5px rgba(0,0,0,0.22);
+}
+/*colors*/
+.colors__palette--1 .color:nth-of-type(1){
+  background-color: #EF2121;
+}
+.colors__palette--1 .color:nth-of-type(2){
+  background-color: #9E1B1B;
+}
+.colors__palette--1 .color:nth-of-type(3){
+  background-color: #EF6868;
+}
+
+.colors__palette--2 .color:nth-of-type(1){
+  background-color: #000;
+}
+.colors__palette--2 .color:nth-of-type(2){
+  background-color: #828282;
+}
+.colors__palette--2 .color:nth-of-type(3){
+  background-color: #FFF;
+}
+
+.colors__palette--3 .color:nth-of-type(1){
+  background-color: #6FD8D8;
+}
+.colors__palette--3 .color:nth-of-type(2){
+  background-color: #237CB8;
+}
+.colors__palette--3 .color:nth-of-type(3){
+  background-color: #1400FF;
+}
+
+.navigation{
+  height: 85px;
+  width: 1260px;
+  margin: 10px auto 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 24px;
+}
+
+.navigation__return{
+  border: 1px solid #000;
+  padding: 15px 60px;
+}
+
+.navigation__next{
+  padding: 15px 50px;
+  background-color: #000;
+  color: #FFF;
+}
+main{
+  position: relative;
+}
+.video{
+  display: none;
+  position: absolute;
+  top:148px;
+  right:89px;
+  width: 1264px;
+  height: 420px;
+}
+
+video, canvas{
+  top: 0;
+  left: 355px;
+  position: absolute;
+  width: 557px;
+  height: 420px;
+  z-index: -1;
+}
+
+.cross{
+  width: 30px;
+  position : absolute;
+  top: 10px;
+  right: 370px;
+  cursor: pointer;
+  transition: all .2s;
+}
+.cross:hover{
+  transform: scale(1.03);
+}
+#startbutton{
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  border: 1px solid #000;
+  background-color: #FFF;
+  width: 250px;
+  height: 50px;
+  transition: all .2s;
+}
+#startbutton:hover{
+  transform: scale(1.015);
+}

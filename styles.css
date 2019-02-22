@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+*{
+  font-family: oswald;
+}
+img{
+  width: 805px;
+  height: 490px;
+}
+section{
+  margin-left: 100px;
+}
+#texture{
+  display: none;
+}
+
+.texture{
+  position: absolute;
+  z-index: 1;
+  width: 800px;
+  height: 500px;
+  top: 15px;
+}
+.mask{
+   position: absolute;
+    display: block;
+    cursor: pointer;
+    height: 500px;
+    width: 100%;
+    z-index: 2;
+    opacity: .7;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+.mask:hover{
+  background-color: rgba(0,0,0,0.2) !important;
+}
+
+.mask1{
+  clip-path: polygon(254px 280px, 327px 258px, 409px 218px, 501px 218px, 559px 188px, 590px 196px, 613px 191px, 633px 142px, 650px 134px, 656px 161px, 676px 161px, 690px 179px, 708px 285px, 700px 296px, 656px 297px, 566px 323px, 477px 317px, 407px 336px, 357px 332px, 287px 345px, 217px 309px, 161px 287px, 141px 281px, 143px 270px, 180px 277px);
+}
+.mask2{
+  clip-path: polygon(137px 272px, 149px 286px, 195px 301px, 285px 343px, 173px 345px, 97px 331px, 95px 294px, 106px 275px, 122px 266px, 141px 257px, 242px 245px, 239px 248px, 151px 260px);
+}
+.mask3{
+   clip-path: polygon(265px 254px, 328px 236px, 451px 176px, 504px 149px, 555px 185px, 522px 208px, 470px 216px, 408px 217px, 328px 257px, 238px 280px, 139px 272px, 146px 261px, 197px 253px);
+}
+.restart{
+  margin-left: 10px;
+  cursor: pointer;
+  width: 40px;
+}
+.content{
+  width: 800px; 
+}
+.textureLabel{
+  cursor: pointer;
+  padding: 1rem 4rem;
+  background-color: #000;
+  color :white;
+  margin: 0 10px;
+}
+section{
+  display: flex;
+}
+.textiles{
+  margin: 0 auto;
+  text-align: center;
+}
+h2{
+  margin: 2rem;
+}
+.colors{
+  margin-top: 10px;
+  width: 800px;
+  height: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.color, .element{
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  margin: 10px;
+  box-shadow: 0 3.5px 7px rgba(0,0,0,0.25), 0 2.5px 2.5px rgba(0,0,0,0.22);
+}
+.color:nth-of-type(1){
+  background-color: #dad6d6;
+}
+.color:nth-of-type(2){
+  background-color: #92bfb1;
+}
+.color:nth-of-type(3){
+  background-color: #f4ac45;
+}
+.color:nth-of-type(4){
+  background-color: #694a38;
+}
+.color:nth-of-type(5){
+  background-color: #a61c3c;
+}
+.color:nth-of-type(6){
+  background-color: #f2e863;
+}
+
+.elements{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: scroll;
+  height: 300px;
+}
+h3{
+  padding: 10px;
+  border: 2px solid #000;
+}
+h3::after{
+  content: ' ';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/d1/Camera_font_awesome.svg');
+}
+h3:hover{
+  cursor: pointer;
+}
+.video{
+  position: absolute;
+  top: 0;
+  border: 1px solid black;
+  width: 800px;
+  height: 500px;
+  display: none;
+}
+video, canvas{
+  width: 700px;
+  height: 300px;
+  top: 0;
+  left: 0;
+}
+video, canvas{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.video img{
+  width: 500px;
+  height: auto;
+}
+.cross{
+  width: 30px;
+  position : absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+}
+button{
+  cursor: pointer;
+  display: block;
+  margin: 10px auto;
+}
